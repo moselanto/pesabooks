@@ -278,3 +278,246 @@ main {
   padding: 5px 9px;
   border-radius: 13px;
 }
+
+/* ---------- SECTIONS ---------- */
+.section {
+  padding: 64px 8px 8px;
+}
+
+.section-head {
+  max-width: 640px;
+  margin: 0 auto 36px;
+  text-align: center;
+}
+
+.eyebrow {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--green-dark);
+  background: var(--green-50);
+  padding: 5px 12px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.section-head h2 {
+  font-size: 28px;
+  line-height: 1.2;
+  margin: 0;
+}
+
+/* ---------- HOW IT WORKS ---------- */
+.steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+@media (max-width: 760px) {
+  .steps {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.step {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.step-num {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--green);
+  color: #fff;
+  font-weight: 800;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.step b {
+  font-size: 15px;
+}
+
+.step p {
+  font-size: 13px;
+  color: var(--muted);
+  margin: 6px 0 0;
+}
+
+/* ---------- PRICING ---------- */
+.tiers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  align-items: start;
+}
+
+@media (max-width: 760px) {
+  .tiers {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tier {
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+
+.tier.hot {
+  border: 2px solid var(--green);
+  background: var(--green-50);
+}
+
+.tier-badge {
+  position: absolute;
+  top: -11px;
+  left: 24px;
+  background: var(--green);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 999px;
+}
+
+.tier-name {
+  font-size: 15px;
+}
+
+.tier-price {
+  font-size: 28px;
+  font-weight: 800;
+  margin: 6px 0 2px;
+}
+
+.tier-per {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--muted);
+}
+
+.tier-note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.tier-features {
+  list-style: none;
+  margin: 0 0 20px;
+  padding: 0;
+  font-size: 13.5px;
+}
+
+.tier-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 0;
+}
+
+.tier-features .tick {
+  color: var(--green-dark);
+  font-weight: 800;
+}
+
+.btn-solid {
+  background: var(--green);
+  color: #fff;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-outline {
+  background: #fff;
+  color: var(--green-dark);
+  border: 1px solid var(--green);
+  width: 100%;
+  text-align: center;
+}
+
+/* ---------- FOOTER ---------- */
+.footer {
+  margin-top: 64px;
+}
+
+.footer-cta {
+  background: linear-gradient(135deg, #04231a, var(--green-dark));
+  border-radius: 24px;
+  padding: 48px 32px;
+  text-align: center;
+  color: #fff;
+  box-shadow: var(--shadow);
+}
+
+.footer-cta h2 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.footer-cta p {
+  color: #d6efe3;
+  margin: 0 0 22px;
+}
+
+.footer-base {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 28px 8px 8px;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer-mark {
+  width: 30px;
+  height: 30px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, var(--green), var(--green-dark));
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+.footer-nav a {
+  font-size: 13px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer-nav a:hover {
+  color: var(--green-dark);
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: var(--muted);
+}
